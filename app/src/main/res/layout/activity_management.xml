@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_margin"
+    android:orientation="vertical"
+    tools:context="com.gglabs.materna.ViewController.ManagementUi.ManagementActivity">
+
+    <TextView
+        android:gravity="center"
+        android:textSize="@dimen/large_text"
+        android:textColor="@color/default_text_color_black"
+        android:text="Management Panel"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tasks" />
+
+    <Button
+        android:id="@+id/btn_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Products" />
+
+</LinearLayout>

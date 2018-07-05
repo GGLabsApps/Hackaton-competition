@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryLight">#757de8</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#85e3fd</color>
+
+
+    <!--UI-->
+    <color name="red">#b13232</color>
+    <color name="green">#44a662</color>
+
+    <color name="ui_black_transparent_bg">#32000000</color>
+    <color name="ui_white_transparent_bg">#32ffffff</color>
+
+    <color name="ui_toolbar_text">#ffffff</color>
+
+
+    <color name="default_text_color_field_hint">@color/colorAccent</color>
+    <color name="default_text_color_field">@color/default_text_color</color>
+
+    <color name="default_text_color">#ffffff</color>
+    <color name="default_text_color_black">#000000</color>
+
+    <color name="grey">#757575</color>
+    <color name="greyLight">#a4a4a4</color>
+    <color name="greyDark">#494949</color>
+
+    <color name="yellow">#ffd600</color>
+    <color name="yellowLight">#ffff52</color>
+    <color name="yellowDark">#c7a500</color>
+
+
+    <color name="read_more">#0b6383</color>
+    <color name="list_item_story">#47a6d6</color>
+
+
+</resources>

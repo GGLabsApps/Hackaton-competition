@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gglabs.materna">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <!--<activity android:name=".ViewController.Donate.DeliveryActivity">-->
+
+        <activity android:name=".ViewController.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Notification -->
+            <intent-filter>
+                <action android:name="com.gglabs.materna.IBMPushNotification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewController.MainActivity" />
+        <activity android:name=".ViewController.RegisterActivity" />
+        <activity android:name=".ViewController.Donate.DonateActivity" />
+        <activity android:name=".ViewController.Donate.DonateMoneyActivity" />
+        <activity android:name=".ViewController.Donate.DonateFoodActivity" />
+        <activity android:name=".ViewController.Donate.DeliveryActivity" />
+        <activity android:name=".ViewController.ManagementUi.TasksActivity" />
+        <activity
+            android:name="com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPushNotificationHandler"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <service
+            android:name="com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPushIntentService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPush"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ViewController.Donate.ScannerActivity" />
+        <activity android:name=".ViewController.ManagementUi.ManagementActivity" />
+        <activity android:name=".ViewController.ManagementUi.ProductsActivity"></activity>
+    </application>
+
+</manifest>
